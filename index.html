@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+  <!-- Navigation bar -->
+    <section class="navigation-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button type="button" class="flex items-center">
+              <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p class="hidden ml-4 leading-5 text-left text-white uppercase lg:block text-16">ALL <br> SPORTS</p></button>
+            <div class="navbar-brand brand name"><strong>DECATHLON</strong></div>
+            
+            <form class="form-inline my-2 my-lg-0 search">
+              <div class="input-group">
+                <input class="form-control" type="search" placeholder="Made by PARISHRI SHAH"  aria-label="Search" style="width:350px;">
+                <div class="input-group-append">
+                  <span class="input-group-text">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMy4wODciIGhlaWdodD0iMjIuNzgxIiB2aWV3Qm94PSIwIDAgMjMuMDg3IDIyLjc4MSI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6IzQyNDQ1MztzdHJva2U6IzQyNDQ1Mzt9PC9zdHlsZT48L2RlZnM+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC41IDAuNTAxKSI+PHBhdGggY2xhc3M9ImEiIGQ9Ik0yMS42MzYsMjAuMjQ3LDE0LjY5MywxMy4zYTguMzI3LDguMzI3LDAsMSwwLTEuMDM3LDEuMDk0TDIwLjU2OSwyMS4zYS43NTQuNzU0LDAsMSwwLDEuMDY3LTEuMDU2Wk0zLjM4NiwxMi45NjhhNi43ODksNi43ODksMCwxLDEsNC44LDIsNi43ODksNi43ODksMCwwLDEtNC44LTJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjE3MSAwLjE5MSkiLz48L2c+PC9zdmc+" alt="Search">
+                  </span>
+                </div>
+              </div>
+            </form>
+            
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content:right;">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item location">
+                  <p style="color: white;">Delivery Location <br><span style="color:yellow">560002</span>
+                  <a class="nav-link" href="#" style="display: inline;"><u>CHANGE</u></a></p>
+                </li>
+                <li class="nav-item">
+                  <img class="h-5 mx-auto" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNy44NzMiIGhlaWdodD0iMjIuNTE3IiB2aWV3Qm94PSIwIDAgMTcuODczIDIyLjUxNyI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMykiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjAzKSI+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xNS41LDEwLjQyN0E0Ljk5MSw0Ljk5MSwwLDAsMSwxMC41Myw1LjIxNmE0Ljk3Miw0Ljk3MiwwLDEsMSw5LjkzMiwwQTQuOTgsNC45OCwwLDAsMSwxNS41LDEwLjQyN1ptMC04LjkyNmEzLjQ4LDMuNDgsMCwwLDAtMy40NzEsMy43MTUsMy40NzMsMy40NzMsMCwxLDAsNi45MywwQTMuNDc1LDMuNDc1LDAsMCwwLDE1LjUsMS41WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTYuNTY4KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNLjczMiw0MS42MjVBLjc1Ljc1LDAsMCwxLC4yLDQxLjQwN2EuNzUuNzUsMCwwLDEtLjIyMS0uNjcyTDEuODA5LDMxLjJhLjc1Ljc1LDAsMCwxLC43NS0uNjEySDE1LjcxNGEuNzUuNzUsMCwwLDEsLjc1LjU5M2wxLjM2Miw2LjM1NmEuNzUuNzUsMCwwLDEtLjU4OS44OTNMLjg3NSw0MS42MjVhLjU5My41OTMsMCwwLDEtLjE0MywwWm0yLjQzNS05LjUzNC0xLjUsNy44MzUsMTQuNTEzLTIuOC0xLjA3My01LjAzMloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDMgLTE5LjExMikiLz48L2c+PC9nPjwvc3ZnPg==" alt="My Account">
+                  <a class="nav-link" href="#">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <img class="h-5 mx-auto" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNy42MjIiIGhlaWdodD0iMTkuODQ3IiB2aWV3Qm94PSIwIDAgMTcuNjIyIDE5Ljg0NyI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6I2ZmZjt9LmJ7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDApIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDApIj48cGF0aCBjbGFzcz0iYSIgZD0iTS42NjEsMTkuODQ1QS42NjEuNjYxLDAsMCwxLDAsMTkuMTgzVi42NjFBLjY2MS42NjEsMCwwLDEsLjY2MSwwaDE2LjNhLjY2MS42NjEsMCwwLDEsLjY2MS42NjFWMTYuMzUyYS42NjEuNjYxLDAsMCwxLS41NDkuNjYxTC43NzQsMTkuODQ1YS42NjIuNjYyLDAsMCwxLS4xMTIsMFpNMS4zMjMsMS4zMjNWMTguNEwxNi4zLDE1LjhWMS4zMjNaTTE2Ljk2MSwxNi4zNTJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDApIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xNy40NTEsNDAuNTYzYS42NjEuNjYxLDAsMCwxLS42NjEtLjY2MXYtNi44NGEuNjYxLjY2MSwwLDAsMSwuNjYxLS42NjFoNS4xOTNhLjY2MS42NjEsMCwwLDEsLjY2MS42NjF2NS45NTNhLjY2MS42NjEsMCwwLDEtMS4zMjMsMFYzMy43MjNoLTMuODdWMzkuOUEuNjYxLjY2MSwwLDAsMSwxNy40NTEsNDAuNTYzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExLjIzNyAtMjEuNjg0KSIvPjxyZWN0IGNsYXNzPSJhIiB3aWR0aD0iMTIuMDUyIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIuNzg1IDIuNjY5KSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTQuODMsMTAuMjdoLjg4NnYuMzQxSDE1LjIzdi4yNTFoLjQydi4zMzFoLS40MnYuMjgxaC40ODZ2LjMzN0gxNC44M1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC05LjkyNSAtNi44NzMpIi8+PHBhdGggY2xhc3M9ImIiIGQ9Ik0xOS4zNzIsMTAuMTg5cy0uNTEzLjg2Ny0uNTYyLjk0NmEuNDUzLjQ1MywwLDAsMS0uMzc3LjIzNUEuNC40LDAsMCwxLDE4LDEwLjk1NmEuNDEzLjQxMywwLDAsMSwuNDA3LS40MTMuNjYxLjY2MSwwLDAsMSwuNDU2LjI0MWwuMi0uMzMxYS44Mi44MiwwLDAsMC0uNjYxLS4zLjgxLjgxLDAsMCwwLS44MjQuNzk0Ljc5Ljc5LDAsMCwwLC43NDEuODEuODczLjg3MywwLDAsMCwuNzIxLS4yNThIMTkuNHYuMjMyaC4zODRWMTAuMTg5Wm0uMDQzLjk5MkgxOS4yMWwuMjA1LS4zNDdaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTEuNzY1IC02Ljc5MikiLz48cGF0aCBjbGFzcz0iYiIgZD0iTTI0LjgzOCwxMS44MTFWMTAuNjM3SDI0LjUzVjEwLjI3aDEuMDE1di4zNjdoLS4zMDh2MS4xNzRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTYuNDE3IC02Ljg3MykiLz48cGF0aCBjbGFzcz0iYiIgZD0iTTI4LjY2LDExLjIyM2gtLjQxM3YuNTg5aC0uNFYxMC4yN2guNHYuNTg1aC40MTNWMTAuMjdoLjR2MS41NDFoLS40WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE4LjYzOSAtNi44NzMpIi8+PHBhdGggY2xhc3M9ImIiIGQ9Ik0zMS44NywxMS44MTFWMTAuMjdoLjM5NHYxLjJoLjQ2NnYuMzQxWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIxLjMyOSAtNi44NzMpIi8+PHBhdGggY2xhc3M9ImIiIGQ9Ik0zNC4wMTgsMTAuNGEuODIuODIsMCwwLDEsMS4xMzQsMCwuNzgxLjc4MSwwLDAsMSwuMjQxLjU2Ni44LjgsMCwwLDEtLjgwNy44QS43ODQuNzg0LDAsMCwxLDM0LDExLjUyNGEuODE0LjgxNCwwLDAsMS0uMjIyLS41NzUuNzY0Ljc2NCwwLDAsMSwuMjM4LS41NTltLjU2OS45OTJhLjQyNS40MjUsMCwxLDAtLjQtLjQyLjQzLjQzLDAsMCwwLC40MTMuNDMzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjIuNjA3IC02LjgwNykiLz48cGF0aCBjbGFzcz0iYiIgZD0iTTM4LjU1LDExLjgxMVYxMC4yN2guMzYxbC42Ljg1N1YxMC4yN2guNHYxLjU0MWgtLjM1MWwtLjYwOS0uODZ2Ljg2WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI1LjggLTYuODczKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTAuNjIsMTEuOFYxMC4yNjFoLjU1OWEuODE3LjgxNywwLDAsMSwuNjA5LjE4NS44My44MywwLDAsMSwwLDEuMTY0LjcuNywwLDAsMS0uNTU2LjE5MlptMS4wMDktLjc3N2EuNC40LDAsMCwwLS40NS0uNDMzSDExLjAydi44NzNoLjE1OWMuMywwLC40NS0uMTM2LjQ1LS40NCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcuMTA3IC02Ljg2NCkiLz48L2c+PC9nPjwvc3ZnPg==" alt="Stores">
+                  <a class="nav-link" href="#">My Store</a>
+                </li>
+                <li class="nav-item">
+                  <img class="h-5 mx-auto" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOS40MiIgaGVpZ2h0PSIyMC4yODgiIHZpZXdCb3g9IjAgMCAxOS40MiAyMC4yODgiPjxkZWZzPjxzdHlsZT4uYXtmaWxsOiNmZmZmZmY7fTwvc3R5bGU+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMC4wMjIpIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIC0wLjAyMikiPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTkuMTY3LjE1N2EuNzEyLjcxMiwwLDAsMC0uNTc2LS4xNzFsLTE4LDIuOTgyQS43MTIuNzEyLDAsMCwwLDAsMy42NzlWMTYuNTQ1YS43MTIuNzEyLDAsMCwwLC44MjkuNzEybDIuMzA5LS4zODF2Mi42NzlhLjcwOC43MDgsMCwwLDAsMS4xNzguNTM0bDQuODA3LTQuMjA5LDkuNy0xLjZhLjcxMi43MTIsMCwwLDAsLjYtLjcxMlYuN2EuNzEyLjcxMiwwLDAsMC0uMjUzLS41NDFaTTE4LDEyLjk2NSw4LjY4OSwxNC41MDZhLjczNi43MzYsMCwwLDAtLjM1Ni4xNjdMNC41NjEsMTcuOTg2VjE2LjAyOWEuNzExLjcxMSwwLDAsMC0uNzEyLS43MTJIMy43MzJsLTIuMzA5LjM5MVY0LjI3M0wxOCwxLjUzN1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMC4wMjIpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0yMC4yNjEsMjcuMDkzYTQuMDI4LDQuMDI4LDAsMCwwLC43NC0uMDY0LDQuMjcsNC4yNywwLDAsMCwzLjQ2NS0zLjUzNy41MzQuNTM0LDAsMCwwLTEuMDM5LS4xNDksMy4yLDMuMiwwLDAsMS01Ljk0MiwxLjA1LjUzNC41MzQsMCwxLDAtLjkzNi41MTYsNC4yNyw0LjI3LDAsMCwwLDMuNzExLDIuMTg1WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEwLjYxOCAtMTQuNzk2KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTguNjQsMTYuOWExLjAzMiwxLjAzMiwwLDEsMC0uNzc0LS4xNywxLjAzNSwxLjAzNSwwLDAsMCwuNzc0LjE3WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExLjIyNSAtOS41NTQpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0zMC4xMTQsMTQuODhhMS4wMzUsMS4wMzUsMCwxLDAtLjc3Ni0uMTdBMS4wMzUsMS4wMzUsMCwwLDAsMzAuMTE0LDE0Ljg4WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE4LjYxNCAtOC4yNTQpIi8+PC9nPjwvZz48L3N2Zz4=" alt="Help">
+                  <a class="nav-link" href="#">Support</a>
+                </li>
+                <li class="nav-item">
+                  <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjAgNi45NjAzNkMyMCAzLjQ2MDM2IDE3LjUzOCAwLjk2MDM1OCAxNC41IDAuOTYwMzU4QzEyLjY0IDAuOTYwMzU4IDExIDEuOTYwMzYgMTAgMi45NjAzNkM5IDEuOTYwMzYgNy4zNiAwLjk2MDM1OCA1LjUgMC45NjAzNThDMi41IDAuOTYwMzU4IDAgMy40NjAzNiAwIDYuOTYwMzZDMCAxMy41NjEzIDYuNjY5MTYgMTcuNDk0NSA5LjUyNTk1IDE5LjE3OTNDOS42OTg2NyAxOS4yODEyIDkuODU3NDYgMTkuMzc0OCAxMCAxOS40NjA0QzEwLjE0MjUgMTkuMzc0OCAxMC4zMDEzIDE5LjI4MTIgMTAuNDc0MSAxOS4xNzkzQzEzLjMzMDggMTcuNDk0NSAyMCAxMy41NjEzIDIwIDYuOTYwMzZaTTEzLjM1NCAxNC44NjM0QzEyLjYxIDE1LjQ1NTQgMTEuODE1IDE2LjAwODQgMTAuOTM0IDE2LjU2NDRDMTAuNjM1IDE2Ljc1MjQgMTAuMzM5IDE2LjkzMzQgMTAgMTcuMTM1NEM5LjY2MSAxNi45MzM0IDkuMzY1IDE2Ljc1MjQgOS4wNjYgMTYuNTYzNEM4LjE4NSAxNi4wMDg0IDcuMzkgMTUuNDU1NCA2LjY0NSAxNC44NjM0QzMuNjY2IDEyLjQ5MzQgMiA5LjkwNDM2IDIgNi45NjAzNkMyIDQuNjE2MzYgMy41NiAyLjk2MDM2IDUuNSAyLjk2MDM2QzYuNTc2IDIuOTYwMzYgNy43NCAzLjUzMDM2IDguNTg2IDQuMzc0MzZMMTAgNS43ODgzNkwxMS40MTQgNC4zNzQzNkMxMi4yNiAzLjUzMDM2IDEzLjQyNCAyLjk2MDM2IDE0LjUgMi45NjAzNkMxNi40NjMgMi45NjAzNiAxOCA0LjYwMDM2IDE4IDYuOTYwMzZDMTggOS45MDMzNiAxNi4zMzUgMTIuNDkzNCAxMy4zNTQgMTQuODYzNFoiIGZpbGw9IiNmZmZmZmYiLz4NCjwvc3ZnPg0K" alt="Cart" class="h-5 mx-auto">
+                  <a class="nav-link" href="#">Wishlist</a>
+                </li>
+                <li class="nav-item">
+                  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNC4xNTUiIGhlaWdodD0iMjEuNDk5IiB2aWV3Qm94PSIwIDAgMjQuMTU1IDIxLjQ5OSI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSI+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xMy40MzEsMTguNWEuODExLjgxMSwwLDAsMS0uNzc1LS41NzZMOS4xODgsNi41NDFBLjgxNC44MTQsMCwwLDEsOS45NjcsNS40OUgyOC43ODVBLjgxMS44MTEsMCwwLDEsMjkuNiw2LjN2OC45MjRhLjgxMS44MTEsMCwwLDEtLjY4Ni44MTFMMTMuNTUzLDE4LjVaTTExLjA2Miw3LjExMywxNCwxNi43NzlsMTMuOTctMi4yNTVWNy4xMTNabTE3LjcyMyw4LjExM1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01LjQ0MSAtMy4yNjMpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0yMy43ODYsNDQuMDg1YTMuMDQyLDMuMDQyLDAsMSwxLDMuMDM4LTMuMDM4QTMuMDQyLDMuMDQyLDAsMCwxLDIzLjc4Niw0NC4wODVabTAtNC40NjJhMS40MiwxLjQyLDAsMSwwLDEuNDE2LDEuNDIsMS40MiwxLjQyLDAsMCwwLTEuNDE2LTEuNDJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTIuMzI4IC0yMi41ODUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik00NS43NTYsNDQuMDg1YTMuMDQyLDMuMDQyLDAsMSwxLDMuMDM4LTMuMDM4QTMuMDQyLDMuMDQyLDAsMCwxLDQ1Ljc1Niw0NC4wODVabTAtNC40NjJhMS40MiwxLjQyLDAsMSwwLDEuNDE2LDEuNDIsMS40MiwxLjQyLDAsMCwwLTEuNDE2LTEuNDJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjUuMzg2IC0yMi41ODUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik00LjYxOCw0LjE1YS44MTEuODExLDAsMCwxLS43NzEtLjU1NmwtLjU0LTEuNjIzTDEuMTc4LDMuMDIyQS44MTIuODEyLDAsMSwxLC40NTIsMS41N0wzLjQyMi4wODVBLjgxMS44MTEsMCwwLDEsNC41NTMuNTU2bC44MzYsMi41MzFBLjgxMS44MTEsMCwwLDEsNC42MTgsNC4xNVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjAwMyAwKSIvPjwvZz48L3N2Zz4=" alt="Cart" class="h-5 mx-auto">
+                    <a class="nav-link" href="#">Cart</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+
+
+    <section class="navigation-sections">
+      <div class="sections">
+        <a href="" class="category">
+          <img deca-image="true" alt="Men" src="https://contents.mediadecathlon.com/s995002/k$237498b0e4de2a3e7332d9f4d8492a8e/frame%209.png?format=auto&amp;quality=70&amp;f=440x0" class="img-fluid bg-no-repeat bg-[length:60px] bg-center absolute inset-0 block min-w-full max-w-full min-h-full max-h-full relative w-16 cn-135 md:w-36 md:h-[150px] bg-none">
+          <p>Men</p>
+        </a>
+        <a href="" class="category">
+          <img deca-image="true" alt="Women" src="https://contents.mediadecathlon.com/s995000/k$45bb7d8f0092052e0e8dd949ad9a87a9/frame%2010.png?format=auto&amp;quality=70&amp;f=440x0" class="img-fluid bg-no-repeat bg-[length:60px] bg-center absolute inset-0 block min-w-full max-w-full min-h-full max-h-full relative w-16 cn-135 md:w-36 md:h-[150px] bg-none">
+          <p>Women</p>
+        </a>
+        <a href="" class="category">
+          <img deca-image="true" alt="Kids" src="https://contents.mediadecathlon.com/s995001/k$8d83a12552656a9890df255497f997a7/frame%2011.png?format=auto&amp;quality=70&amp;f=440x0" class="img-fluid bg-no-repeat bg-[length:60px] bg-center absolute inset-0 block min-w-full max-w-full min-h-full max-h-full relative w-16 cn-135 md:w-36 md:h-[150px] bg-none">
+          <p>Kids</p>
+        </a>
+        <a href="" class="category">
+          <img deca-image="true" alt="Sale" src="https://contents.mediadecathlon.com/s996772/k$e86603bd073c603b94fd3a9f7c8d9762/group%2049222.png?format=auto&amp;quality=70&amp;f=440x0" class="img-fluid bg-no-repeat bg-[length:60px] bg-center absolute inset-0 block min-w-full max-w-full min-h-full max-h-full relative w-16 cn-135 md:w-36 md:h-[150px] bg-none">
+          <p>Sale</p>
+        </a>
+        <a href="" class="category">
+          <img deca-image="true" alt="Eco Design" src="https://contents.mediadecathlon.com/s996774/k$4be35f20fe8f4901e20e33423f9e2f59/group%2049221.png?format=auto&amp;quality=70&amp;f=440x0" class="img-fluid bg-no-repeat bg-[length:60px] bg-center absolute inset-0 block min-w-full max-w-full min-h-full max-h-full relative w-16 cn-135 md:w-36 md:h-[150px] bg-none">
+          <p>Eco-Design</p>
+        </a>
+        <a href="" class="category">
+          <img deca-image="true" alt="Services" src="https://contents.mediadecathlon.com/s996771/k$e7b9fdb4c40fbd9d4787a3500638801e/group%2049226.png?format=auto&amp;quality=70&amp;f=440x0" class="img-fluid bg-no-repeat bg-[length:60px] bg-center absolute inset-0 block min-w-full max-w-full min-h-full max-h-full relative w-16 cn-135 md:w-36 md:h-[150px] bg-none">
+          <p>Services</p>
+        </a>
+      </div>
+    </section>
+
+
+    <section class="container-images">
+        
+   <div class="slider">
+    <img src="price drop web.avif" alt="Image 1">
+    <img src="monsoon web  2.avif" alt="Image 2">
+    <img src="0011 fathers day.avif" alt="Image 3">
+    <img src="frame 9.avif" alt="Image 4">
+    <img src="take a breath web.avif" alt="Image 5">
+    <img src="travel web.avif" alt="Image 6">
+    <img src="main banner play in com 01.avif" alt="Image 7">
+    </div>
+  
+    <script src="script.js"></script>
+
+      </div>
+    </section>
+
+    <section class="feedback" style="background-image:url(data:image/webp;base64,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">;
+      <div class=" flex-item">
+         100+ Stores Across India 
+      </div>
+      <div class=" flex-item middle">
+         Easy returns
+      </div>
+      <div class="flex-item">
+         1 million+ happy Customers
+      </div>
+    </section>
+</body>
+</html>
