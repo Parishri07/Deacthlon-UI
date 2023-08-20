@@ -94,3 +94,31 @@ button {
 .flex-item:last-child{
   border-right: none;
 }
+.flex-item:last-child{
+  border-right: none;
+}
+
+.search{
+  padding-left: 0;
+  background-color: white;
+  color: black;
+  padding-right: 80px;
+  padding:3px;
+}
+
+.input-group-append{
+  padding: 8px;
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+}
+
+.cards{
+  display:flex;
+}
+.h4{
+padding-left:100px;
+}
